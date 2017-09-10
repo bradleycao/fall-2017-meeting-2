@@ -1,0 +1,91 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    .overlay-container {
+      position: relative;
+    }
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #0C7054;
+    }
+    .overlay-container:hover .overlay {
+      opacity: 0.9;
+    }
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+    #projects .row > div {
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Some Projects</h2>
+    <div id="projects">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="overlay-container img-responsive">
+            <img src="http://fillmurray.com/400/400" class="img-responsive">
+            <div class="overlay">
+              <div class="text">
+                <h3>Project</h3>
+                <p>Description of the project</p>
+                <a href="http://google.com" class="btn btn-primary">Check it</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="overlay-container img-responsive">
+            <img src="http://fillmurray.com/400/400" class="img-responsive">
+            <div class="overlay">
+              <div class="text">
+                <h3>Project</h3>
+                <p>Description of the project</p>
+                <a href="http://google.com" class="btn btn-primary">Check it</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="overlay-container img-responsive">
+            <img src="http://fillmurray.com/400/400" class="img-responsive">
+            <div class="overlay">
+              <div class="text">
+                <h3>Project</h3>
+                <p>Description of the project</p>
+                <a href="http://google.com" class="btn btn-primary">Check it</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
